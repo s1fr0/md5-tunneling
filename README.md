@@ -1,5 +1,5 @@
 # md5-tunneling
-A C implementation of Tunnel Method by V. Klima to speed up collision search for MD5.
+A C implementation of the Tunneling Method by V. Klima to speed up collision search for MD5.
 
 ## About
 Based on Multi-Message Modifications Method and Tunnels, the program searches for two 128-bytes messages with same [MD5](https://en.wikipedia.org/wiki/MD5) hash.
