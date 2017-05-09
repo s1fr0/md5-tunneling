@@ -2,7 +2,7 @@
 
 This program demonstrates the method of tunneling according to
 
-Vlastimil Klima: Tunnels in Hash Functions: MD5 Collisions Within a Minute, sent to IACR eprint, 18 March, 2006, http://cryptography.hyperlink.cz/2006/tunnels.pdf
+Vlastimil Klima: Tunnels in Hash Functions: MD5 Collisions Within a Minute, sent to IACR eprint, 18 March, 2006, http://eprint.iacr.org/2006/105.pdf
   
 Homepage of the project:
 http://cryptography.hyperlink.cz/MD5_collisions.html
