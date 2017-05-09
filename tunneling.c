@@ -19,7 +19,7 @@ References
 [LiLa05] Liang J. and Lai X.: Improved Collision Attack on Hash Function MD5, Cryptology ePrint Archive: Report 425/2005, 23 Nov 2005, http://eprint.iacr.org/2005/425.pdf.
 
   
-Compile linking the math library: gcc *.c -lm
+Compile linking the math library.
 
 */
 
@@ -37,7 +37,7 @@ Compile linking the math library: gcc *.c -lm
 ///                    GLOBAL VARIABLES                      //
 ///////////////////////////////////////////////////////////////
 
-//Set Tunnels to use
+//Set Tunnels to use (0/1)
 #define USE_B1_Q4 1
 #define USE_B1_Q9 1
 #define USE_B1_Q10 1
@@ -46,7 +46,7 @@ Compile linking the math library: gcc *.c -lm
 #define USE_B1_Q20 1
 #define USE_B2_Q9 1
 
-//Set what to store or print
+//Set what to store or print (0/1)
 #define WRITE_BLOCKS_SUMMARY 1
 #define WRITE_BLOCKS_TO_DISK 1
 #define PRINT_FINAL_HASH 1
