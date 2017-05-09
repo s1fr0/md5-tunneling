@@ -6,6 +6,7 @@ Based on Multi-Message Modifications Method and Tunnels, the program searches fo
 
 The idea of Tunnels to speed up MD5 collisions search is described in: *Vlastimil Klima: Tunnels in Hash Functions: MD5 Collisions Within a Minute, sent to IACR eprint, 18 March, 2006* [PDF](http://eprint.iacr.org/2006/105.pdf)
 
+Other related papers and attack examples can be found [here](http://cryptography.hyperlink.cz/MD5_collisions.html).
 
 ## Compilation
 The Math library needs to be linked
