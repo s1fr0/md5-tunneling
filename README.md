@@ -4,7 +4,7 @@ A C implementation of Tunnel Method by V. Klima to speed up collision search for
 ## About
 Based on Multi-Message Modifications Method and Tunnels, the program searches for two 128-bytes messages with same [MD5](https://en.wikipedia.org/wiki/MD5) hash.
 
-The idea of Tunnels to speed up MD5 collisions search is described in: "Vlastimil Klima: Tunnels in Hash Functions: MD5 Collisions Within a Minute, sent to IACR eprint, 18 March, 2006, [PDF](http://eprint.iacr.org/2006/105.pdf)"
+The idea of Tunnels to speed up MD5 collisions search is described in: *Vlastimil Klima: Tunnels in Hash Functions: MD5 Collisions Within a Minute, sent to IACR eprint, 18 March, 2006, [PDF](http://eprint.iacr.org/2006/105.pdf)
 
 ## Functionalities
 At compile time, the user can choose to
