@@ -22,20 +22,20 @@ At compile time, the user can choose to
 * Print the colliding hash in summary
 * Print the colliding hash in standard output
 
-A [Linear Congruential Generator](https://en.wikipedia.org/wiki/Linear_congruential_generator) is implemented as a pseudo-random number generator. The user can set at runtime a seed that produces the same collision across different OS and architectures.
+A [Linear Congruential Generator](https://en.wikipedia.org/wiki/Linear_congruential_generator) is implemented as a pseudo-random number generator. The user can set a seed that produces the same collision across different OS and architectures.
 
-The attack is independent from the Init Vector (IV) used by MD5. The user can set at runtime the IV he wants and search for a collision for that particular IV.
+The attack is independent from the Init Vector (IV) used by MD5. The user can set the IV he wants and search for a collision for that particular IV.
 
 You can give as input to the program:
-* 1 HEXnum to specify the seed to use
+* 1 hex number to specify the seed
 ```
 md5-tunneling 0x69423840
 ```
-* 4 HEXnums to specify the custom IV for MD5
+* 4 hex numbers to specify the custom IV for MD5
 ```
 md5-tunneling 0xF0E1D2C3 0xB4A59687 0x78695A4B 0x3C2D1E0F
 ```
-* 5 HEXnums to specify the seed and custom IV
+* 5 hex numbers to specify the seed and custom IV
 ```
 md5-tunneling 0x69423840 0xF0E1D2C3 0xB4A59687 0x78695A4B 0x3C2D1E0F
 ```
