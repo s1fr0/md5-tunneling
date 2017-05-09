@@ -6,11 +6,19 @@ Based on Multi-Message Modifications Method and Tunnels, the program searches fo
 
 The idea of Tunnels to speed up MD5 collisions search is described in: *Vlastimil Klima: Tunnels in Hash Functions: MD5 Collisions Within a Minute, sent to IACR eprint, 18 March, 2006* [PDF](http://eprint.iacr.org/2006/105.pdf)
 
+
+## Compilation
+The Math library needs to be linked
+
+```
+gcc tunneling.c -lm -o md5-tunneling
+```
+
 ## Functionalities
 At compile time, the user can choose to
 * Enable/disable any implemented tunnel
-* Write to disk the two colliding blocks as binaries
-* Write to disk a summary of the collision found (the messages' bytes, timings and common hash)
+* Write to disk the two colliding messages as binaries
+* Write to disk a summary of the collision found (messages' bytes, timings and common hash)
 * Print the colliding hash in summary
 * Print the colliding hash in standard output
 
@@ -18,9 +26,16 @@ A [Linear Congruential Generator](https://en.wikipedia.org/wiki/Linear_congruent
 
 The attack is independent from the Init Vector (IV) used by MD5. The user can set at runtime the IV he wants and search for a collision for that particular IV.
 
-## Compilation
-The Math library needs to be linked
-
+You can give as input to the program:
+* 1 HEXnum to specify the seed to use
 ```
-gcc tunneling.c -lm
+md5-tunneling 0x69423840
+```
+* 4 HEXnums to specify the custom IV for MD5
+```
+md5-tunneling 0xF0E1D2C3 0xB4A59687 0x78695A4B 0x3C2D1E0F
+```
+* 5 HEXnums to specify the seed and custom IV
+```
+md5-tunneling 0x69423840 0xF0E1D2C3 0xB4A59687 0x78695A4B 0x3C2D1E0F
 ```
