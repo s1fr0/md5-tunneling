@@ -1748,7 +1748,7 @@ int main ( int argc, char *argv[] ) {
     printf("\nWriting Message 1 to disk: ");
     printf((write_block(m1_file, (void *)v1) ? "FAILED\n" : "OK\n"));
     printf("Writing Message 2 to disk: ");
-    printf((write_block(m2_file, (void *)v1) ? "FAILED\n" : "OK\n"));
+    printf((write_block(m2_file, (void *)v2) ? "FAILED\n" : "OK\n"));
   
   }   
 
