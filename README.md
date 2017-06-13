@@ -19,7 +19,7 @@ gcc tunneling.c -lm -o md5-tunneling
 At compile time, the user can choose to
 * Enable/disable any implemented tunnel
 * Write to disk the two colliding messages as binaries
-* Write to disk a summary of the collision found (messages' bytes, timings and common hash)
+* Write to disk a summary of the collision found (message bytes, timings and common hash)
 * Print the colliding hash in summary
 * Print the colliding hash in standard output
 
